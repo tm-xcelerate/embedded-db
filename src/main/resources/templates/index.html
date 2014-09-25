@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>API Services</title>
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/normalize.css" />
+</head>
+
+<body>
+	<h1>Welcome</h1>
+
+	<p>
+		<a href="greeting?name=Wanda">Say Hey</a>
+	</p>
+
+	<form method="POST" enctype="multipart/form-data" action="/processFile">
+		File to process: <input type="file" name="file" /><br /> <input
+			type="submit" value="Process" /> Press here to process the file!
+	</form>
+	<form method="POST" enctype="multipart/form-data"
+		action="/processFileAsXhtml">
+		File to process: <input type="file" name="file" /><br /> <input
+			type="submit" value="Process" /> Press here to process the file!
+	</form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+# EMBEDDED SERVER CONFIGURATION
+server:
+    port: 8282
+
+# SPRING
+spring:
+
+# DATASOURCE
+    datasource:
+        driverClassName: org.apache.derby.jdbc.EmbeddedDriver
+        url: jdbc:derby:src/main/resources/webdb
+#        username: snidely
+#        password: whiplash
+
+# JPA
+    jpa:
+        database: derby
+        database-platform: org.hibernate.dialect.DerbyTenSevenDialect
+
+        hibernate:
+            naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+            ddl-auto: none
+
+        show-sql: true
+
+# MISCELLANEOUS
+name: Marvin K. Martian

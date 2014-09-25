@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Getting Started: Serving Web Content</title>
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/normalize.css" />
+</head>
+
+<body>
+	<p
+		th:text="'Hello, ' + ${name1} + ' -- from application.yaml/properties'" />
+	<p
+		th:text="'Hello, ' + ${name2} + ' -- from parameter passed to greeting method'" />
+	<p th:text="'Hello, ' + ${name3} + ' -- from call to database'" />
+</body>
+</html>
